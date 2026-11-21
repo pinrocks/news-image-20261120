@@ -75,14 +75,15 @@ function verifyWholePng(buf: Buffer): void {
       const colorType = buf[dataStart + 9];
       const compressionMethod = buf[dataStart + 10];
       const filterMethod = buf[dataStart + 11];
+      const interlaceMethod = buf[dataStart + 12];
       if (width !== TARGET_WIDTH || height !== TARGET_HEIGHT) {
         throw new Error(`Expected ${TARGET_WIDTH}x${TARGET_HEIGHT} PNG, got ${width}x${height}`);
       }
       if (![1, 2, 4, 8, 16].includes(bitDepth) || ![0, 2, 3, 4, 6].includes(colorType)) {
         throw new Error(`Unsupported PNG bitDepth=${bitDepth} colorType=${colorType}`);
       }
-      if (compressionMethod !== 0 || filterMethod !== 0) {
-        throw new Error(`Invalid PNG compression=${compressionMethod} filter=${filterMethod}`);
+      if (compressionMethod !== 0 || filterMethod !== 0 || (interlaceMethod !== 0 && interlaceMethod !== 1)) {
+        throw new Error(`Invalid PNG header flags: comp=${compressionMethod} filter=${filterMethod} interlace=${interlaceMethod}`);
       }
     } else if (type === "IDAT") {
       idatBytes += dataLen;

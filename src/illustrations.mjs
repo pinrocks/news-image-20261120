@@ -8,15 +8,15 @@ function tagBadge(label, bg, customWidth = null) {
 
 function bottomSplitBadges(leftText, leftBg, rightText, rightBg) {
   return `<g font-family="Avenir Next Condensed, Helvetica Neue, sans-serif" font-size="19" font-weight="800">
-    <rect x="8" y="165" width="141" height="29" rx="4" fill="${leftBg}"/>
-    <text x="78.5" y="185" text-anchor="middle" fill="#FFFFFF">${leftText}</text>
-    <rect x="157" y="165" width="141" height="29" rx="4" fill="${rightBg}"/>
-    <text x="227.5" y="185" text-anchor="middle" fill="#FFFFFF">${rightText}</text>
+    <rect x="8" y="161" width="141" height="29" rx="4" fill="${leftBg}"/>
+    <text x="78.5" y="181" text-anchor="middle" fill="#FFFFFF">${leftText}</text>
+    <rect x="157" y="161" width="141" height="29" rx="4" fill="${rightBg}"/>
+    <text x="227.5" y="181" text-anchor="middle" fill="#FFFFFF">${rightText}</text>
   </g>`;
 }
 
 export function svgHeroKyivPoland() {
-  return `<svg viewBox="0 0 306 202" width="306" height="202" xmlns="http://www.w3.org/2000/svg">
+  return `<svg viewBox="0 0 306 198" width="306" height="198" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <radialGradient id="heroBlast" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stop-color="#FEF08A"/>
@@ -25,7 +25,7 @@ export function svgHeroKyivPoland() {
       </radialGradient>
     </defs>
     <!-- Left Half: Kyiv & Dnipro River Bridges -->
-    <rect x="0" y="0" width="151" height="202" rx="6" fill="#10233A"/>
+    <rect x="0" y="0" width="151" height="198" rx="6" fill="#10233A"/>
     <g stroke="#233E5C" stroke-width="1.4">
       <line x1="8" y1="58" x2="144" y2="66"/>
       <line x1="8" y1="106" x2="144" y2="100"/>
@@ -58,7 +58,7 @@ export function svgHeroKyivPoland() {
     <line x1="153" y1="4" x2="153" y2="198" stroke="#F4EFE3" stroke-width="3"/>
 
     <!-- Right Half: SE Poland Border Radar & NATO Fighter Scramble -->
-    <rect x="155" y="0" width="151" height="202" rx="6" fill="#0B2229"/>
+    <rect x="155" y="0" width="151" height="198" rx="6" fill="#0B2229"/>
     <g fill="none" stroke="#2DD4BF" stroke-opacity="0.28" stroke-width="1.3">
       <circle cx="228" cy="92" r="32"/>
       <circle cx="228" cy="92" r="62"/>
@@ -82,8 +82,8 @@ export function svgHeroKyivPoland() {
 }
 
 export function svgMarketsCorrection() {
-  return `<svg viewBox="0 0 306 202" width="306" height="202" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="306" height="202" rx="6" fill="#111827"/>
+  return `<svg viewBox="0 0 306 198" width="306" height="198" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="306" height="198" rx="6" fill="#111827"/>
     <!-- Baseline & Grid -->
     <line x1="16" y1="48" x2="290" y2="48" stroke="#64748B" stroke-width="2"/>
     <line x1="16" y1="90" x2="290" y2="90" stroke="#1E293B" stroke-width="1.5"/>
@@ -102,23 +102,23 @@ export function svgMarketsCorrection() {
     </g>
 
     <!-- 4 Strictly Proportional Descending Market Bars (-3.7%, -5.1%, -5.3%, -5.4%) -->
-    <rect x="26" y="48" width="48" height="71" rx="4" fill="#F97316"/>
-    <rect x="92" y="48" width="48" height="96" rx="4" fill="#EF4444"/>
-    <rect x="158" y="48" width="48" height="102" rx="4" fill="#DC2626"/>
-    <rect x="224" y="48" width="48" height="105" rx="4" fill="#991B1B" stroke="#FCA5A5" stroke-width="1.5"/>
+    <rect x="26" y="48" width="48" height="69" rx="4" fill="#F97316"/>
+    <rect x="92" y="48" width="48" height="93" rx="4" fill="#EF4444"/>
+    <rect x="158" y="48" width="48" height="98" rx="4" fill="#DC2626"/>
+    <rect x="224" y="48" width="48" height="101" rx="4" fill="#991B1B" stroke="#FCA5A5" stroke-width="1.5"/>
 
     <!-- Bold Plunging Arrow Overlay -->
-    <path d="M 38 66 L 116 98 L 182 114 L 252 132" fill="none" stroke="#FEF08A" stroke-width="4.5" stroke-linecap="round"/>
-    <polygon points="262,136 244,139 250,122" fill="#FEF08A"/>
+    <path d="M 38 66 L 116 96 L 182 112 L 252 128" fill="none" stroke="#FEF08A" stroke-width="4.5" stroke-linecap="round"/>
+    <polygon points="262,132 244,135 250,118" fill="#FEF08A"/>
 
-    ${tagBadge("GLOBAL · MARKETS", "#DC2626")}
+    ${tagBadge("US · ASIA · AUS", "#DC2626")}
     ${bottomSplitBadges("NASDAQ -5.3%", "#B91C1C", "NIKKEI -5.1%", "#7F1D1D")}
   </svg>`;
 }
 
 export function svgCop31Overtime() {
-  return `<svg viewBox="0 0 306 202" width="306" height="202" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="306" height="202" rx="6" fill="#0D2B30"/>
+  return `<svg viewBox="0 0 306 198" width="306" height="198" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="306" height="198" rx="6" fill="#0D2B30"/>
 
     <!-- Treaty Document with Crossed-Out Fossil Fuel Barrel/Smokestack -->
     <rect x="22" y="44" width="124" height="112" rx="6" fill="#FFFDF7" stroke="#94A3B8" stroke-width="2"/>
@@ -150,8 +150,8 @@ export function svgCop31Overtime() {
 }
 
 export function svgCycloneAkvan() {
-  return `<svg viewBox="0 0 306 202" width="306" height="202" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="306" height="202" rx="6" fill="#0A3A52"/>
+  return `<svg viewBox="0 0 306 198" width="306" height="198" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="306" height="198" rx="6" fill="#0A3A52"/>
     <!-- India Eastern Coastline (Odisha & North Andhra) -->
     <path d="M 0 0 L 166 0 L 146 38 L 118 76 L 96 116 L 68 164 L 0 164 Z" fill="#DFD6BE" stroke="#94A3B8" stroke-width="2"/>
     <path d="M 0 36 L 126 36 L 100 84 L 68 136 L 0 136 Z" fill="#C9C0A6" opacity="0.5"/>
@@ -178,8 +178,8 @@ export function svgCycloneAkvan() {
 }
 
 export function svgUkEuReset() {
-  return `<svg viewBox="0 0 306 202" width="306" height="202" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="306" height="202" rx="6" fill="#14244B"/>
+  return `<svg viewBox="0 0 306 198" width="306" height="198" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="306" height="198" rx="6" fill="#14244B"/>
     <!-- Channel Waves -->
     <path d="M 88 138 Q 120 130 153 138 T 218 138" fill="none" stroke="#38BDF8" stroke-width="2.5" opacity="0.6"/>
 
@@ -225,7 +225,7 @@ export function svgUkEuReset() {
 }
 
 export function svgYemenHodeidah() {
-  return `<svg viewBox="0 0 306 202" width="306" height="202" xmlns="http://www.w3.org/2000/svg">
+  return `<svg viewBox="0 0 306 198" width="306" height="198" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <radialGradient id="portBlast" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stop-color="#FEF08A"/>
@@ -234,7 +234,7 @@ export function svgYemenHodeidah() {
       </radialGradient>
     </defs>
     <!-- Red Sea Waterway -->
-    <rect x="0" y="0" width="306" height="202" rx="6" fill="#0B354D"/>
+    <rect x="0" y="0" width="306" height="198" rx="6" fill="#0B354D"/>
     <!-- African Horn Coast (Bottom Left) -->
     <path d="M 0 96 L 52 128 L 76 164 L 0 164 Z" fill="#C9BEA3" stroke="#64748B" stroke-width="1.8"/>
     <!-- Arabian Peninsula / Yemen Coast (Right) -->
@@ -264,8 +264,8 @@ export function svgYemenHodeidah() {
 }
 
 export function svgWhoDrcEbola() {
-  return `<svg viewBox="0 0 306 202" width="306" height="202" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="306" height="202" rx="6" fill="#172234"/>
+  return `<svg viewBox="0 0 306 198" width="306" height="198" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="306" height="198" rx="6" fill="#172234"/>
     <!-- Central & East Africa Landmass -->
     <path d="M 68 42 L 218 42 L 254 74 L 238 124 L 212 162 L 88 162 L 76 118 L 56 80 Z" fill="#DFD6BE" stroke="#64748B" stroke-width="2"/>
     <!-- Regional Border Line (Sudan North / DRC Center-South) -->
@@ -288,8 +288,8 @@ export function svgWhoDrcEbola() {
 }
 
 export function svgMexicoChapoIsidro() {
-  return `<svg viewBox="0 0 306 202" width="306" height="202" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="306" height="202" rx="6" fill="#0E2F44"/>
+  return `<svg viewBox="0 0 306 198" width="306" height="198" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="306" height="198" rx="6" fill="#0E2F44"/>
     <!-- Mexico Landmass + Baja California -->
     <path d="M 38 42 L 138 42 L 154 78 L 188 112 L 222 104 L 236 128 L 210 156 L 154 146 L 112 118 L 74 92 L 54 58 Z" fill="#DFD6BE" stroke="#64748B" stroke-width="2"/>
     <path d="M 34 48 L 54 96 L 44 100 L 24 52 Z" fill="#DFD6BE" stroke="#64748B" stroke-width="1.8"/>
@@ -314,8 +314,8 @@ export function svgMexicoChapoIsidro() {
 }
 
 export function svgBepiColomboSpace() {
-  return `<svg viewBox="0 0 306 202" width="306" height="202" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="306" height="202" rx="6" fill="#090E24"/>
+  return `<svg viewBox="0 0 306 198" width="306" height="198" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="306" height="198" rx="6" fill="#090E24"/>
     <!-- Crisp Starfield -->
     <circle cx="170" cy="24" r="1.8" fill="#FFFFFF"/>
     <circle cx="42" cy="58" r="1.8" fill="#BAE6FD"/>
@@ -347,6 +347,6 @@ export function svgBepiColomboSpace() {
     </g>
 
     ${tagBadge("SPACE · SCIENCE", "#4338CA")}
-    ${bottomSplitBadges("CRAB NEBULA", "#6D28D9", "MERCURY EVE", "#4338CA")}
+    ${bottomSplitBadges("ESA/JAXA MIXS", "#6D28D9", "MERCURY EVE", "#4338CA")}
   </svg>`;
 }

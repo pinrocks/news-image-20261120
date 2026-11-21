@@ -247,8 +247,8 @@ export function buildBroadsheetHtml() {
     {
       id: "bepicolombo-mercury-xray",
       accent: "#4338CA",
-      headline: byId["bepicolombo-mercury-xray"]?.headline ?? "Probe Captures First X-Ray",
-      sublabel: byId["bepicolombo-mercury-xray"]?.sublabel ?? "BepiColombo images Crab Nebula X-rays",
+      headline: "BepiColombo 'First Light'",
+      sublabel: "Mercury probe tests X-ray eye on Crab",
       svg: svgBepiColomboSpace(),
     },
   ];
@@ -292,7 +292,7 @@ export function buildBroadsheetHtml() {
   }
 
   .masthead {
-    height: 78px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -301,19 +301,33 @@ export function buildBroadsheetHtml() {
     border: 2.5px solid #0F172A;
     border-bottom: 5px solid #0F172A;
   }
+  .brand-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
   .brand-title {
     font-family: Georgia, serif;
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 700;
     letter-spacing: -0.4px;
     line-height: 1;
     color: #0F172A;
     white-space: nowrap;
   }
+  .brand-deck {
+    font-family: "Avenir Next Condensed", "Helvetica Neue", sans-serif;
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 0.45px;
+    line-height: 1.05;
+    color: #B91C1C;
+    white-space: nowrap;
+  }
   .date-banner {
     background: #A61B1B;
     color: #FFFFFF;
-    padding: 8px 18px;
+    padding: 10px 18px;
     border-radius: 5px;
     border: 2.5px solid #0F172A;
     display: flex;
@@ -354,7 +368,7 @@ export function buildBroadsheetHtml() {
   }
   .art-box {
     width: 100%;
-    height: 202px;
+    height: 198px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -390,7 +404,10 @@ export function buildBroadsheetHtml() {
 <body>
   <div class="page">
     <header class="masthead">
-      <div class="brand-title">THE WORLD IN ONE DAY</div>
+      <div class="brand-stack">
+        <div class="brand-title">THE WORLD IN ONE DAY</div>
+        <div class="brand-deck">6 CONTINENTS · 9 BEATS · REPORTED 20 NOV 2026</div>
+      </div>
       <div class="date-banner">
         <div class="date-main">FRIDAY, 20 NOVEMBER 2026</div>
       </div>
