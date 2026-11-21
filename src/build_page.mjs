@@ -223,11 +223,11 @@ export function buildBroadsheetHtml() {
       svg: svgNigeriaBoatCapsize(),
     },
     {
-      id: "who-drc-ebola-pheic-sudan-unsc",
+      id: "who-drc-ebola-20nov-report",
       kicker: "C. & E. AFRICA · HEALTH",
       accent: "#DC2626",
-      headline: byId["who-drc-ebola-pheic-sudan-unsc"]?.headline_short ?? "WHO Keeps DRC Ebola Global Emergency",
-      fact: byId["who-drc-ebola-pheic-sudan-unsc"]?.fact_line ?? "Bundibugyo cases top 11,600 in eastern DRC as UNSC meets on Sudan war.",
+      headline: "WHO Logs 11,613 DRC Ebola Cases",
+      fact: "20 Nov WHO report cites 5,678 Bundibugyo deaths; UNSC meets on Sudan.",
       svg: svgWhoDrcEbola(),
     },
     {
@@ -239,11 +239,11 @@ export function buildBroadsheetHtml() {
       svg: svgMiddleEastUnReport(),
     },
     {
-      id: "ecuador-security-barbados-ai-summit",
-      kicker: "LATIN AMERICA · DIPLOMACY",
+      id: "mexico-sinaloa-honduras-cyber",
+      kicker: "LATIN AMERICA · SECURITY",
       accent: "#0284C7",
-      headline: byId["ecuador-security-barbados-ai-summit"]?.headline_short ?? "US-Ecuador Pact & Barbados UN AI Talks",
-      fact: byId["ecuador-security-barbados-ai-summit"]?.fact_line ?? "Hegseth & Noboa meet in Quito on cartel pact; UN sets Barbados AI summit.",
+      headline: "Mexico Captures 'El Chapo Isidro'",
+      fact: "Sinaloa raid nets FBI Top-10 cartel boss; US & Honduras sign cyber pact.",
       svg: svgLatAmCaribbean(),
     },
     {
@@ -636,7 +636,7 @@ export function buildBroadsheetHtml() {
         </svg>
         <div class="crest-meta">
           <b>12 ILLUSTRATED DISPATCHES</b>
-          <span>AMERICAS · EUROPE · AFRICA · ASIA</span>
+          <span>AMERICAS · EUROPE · AFRICA · ASIA-PAC</span>
         </div>
       </div>
       <div class="date-banner">
@@ -696,8 +696,8 @@ export function buildBroadsheetHtml() {
       </div>
       <div class="dispatches">
         <div class="dispatch-col">
-          <div class="dispatch-head">OCEANIA · SYDNEY &amp; NZ</div>
-          <div class="dispatch-body">AFP charges Sydney terror suspect; NZ High Court rules pay-equity overhaul discriminatory.</div>
+          <div class="dispatch-head">OCEANIA · SYDNEY &amp; MARKETS</div>
+          <div class="dispatch-body">AFP charges Sydney terror suspect after JCTT raids; ASX 200 logs worst week since 2022 (-5.4%).</div>
         </div>
         <div class="dispatch-col">
           <div class="dispatch-head">EUROPE · BRUSSELS &amp; NORDICS</div>

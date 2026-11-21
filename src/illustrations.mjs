@@ -114,18 +114,10 @@ export function svgHeroKyivPoland() {
     <rect x="424" y="64" width="108" height="16" rx="2.5" fill="#4C0519" opacity="0.92"/>
     <text x="478" y="75.5" text-anchor="middle" fill="#FECDD3" font-family="Avenir Next Condensed, sans-serif" font-size="11" font-weight="800">2× Kh-101 + DRONE</text>
 
-    <!-- 2 Scrambled NATO Fighter Silhouettes -->
-    <g transform="translate(310,66) rotate(18)" fill="#E0F2FE" stroke="#0284C7" stroke-width="0.8">
-      <polygon points="22,0 8,6 0,14 8,11 6,18 13,13 22,12 13,9 8,2 10,7"/>
-      <polygon points="0,0 18,-6 14,0 18,6"/>
-    </g>
-    <g transform="translate(316,118) rotate(-14)" fill="#E0F2FE" stroke="#0284C7" stroke-width="0.8">
-      <polygon points="0,0 18,-6 14,0 18,6"/>
-    </g>
-    <!-- Crisp Jet Silhouettes -->
-    <path d="M 332 70 L 314 63 L 317 69 L 308 71 L 317 73 L 314 79 Z" fill="#F8FAFC"/>
-    <path d="M 338 120 L 320 113 L 323 119 L 314 121 L 323 123 L 320 129 Z" fill="#F8FAFC"/>
-    <text x="282" y="100" fill="#7DD3FC" font-family="Avenir Next Condensed, sans-serif" font-size="11" font-weight="800">NATO JETS</text>
+    <!-- 2 Scrambled NATO Fighter Silhouettes (right-facing intercept vectors) -->
+    <path d="M 336 69 L 316 61 L 320 67 L 308 68 L 305 64 L 305 74 L 308 70 L 320 71 L 316 77 Z" fill="#F8FAFC" stroke="#38BDF8" stroke-width="0.7"/>
+    <path d="M 342 119 L 322 111 L 326 117 L 314 118 L 311 114 L 311 124 L 314 120 L 326 121 L 322 127 Z" fill="#F8FAFC" stroke="#38BDF8" stroke-width="0.7"/>
+    <text x="282" y="99" fill="#7DD3FC" font-family="Avenir Next Condensed, sans-serif" font-size="11" font-weight="800">NATO JETS</text>
 
     <rect x="280" y="8" width="116" height="19" rx="3" fill="#0B1320" opacity="0.9"/>
     <text x="286" y="21" fill="#F8FAFC" font-family="Avenir Next Condensed, sans-serif" font-size="12" font-weight="800" letter-spacing="0.5">POLISH AIRSPACE</text>
@@ -140,40 +132,41 @@ export function svgMarketsCorrection() {
     <rect x="0" y="0" width="166" height="128" rx="5" fill="#111827"/>
     <!-- Grid lines -->
     <line x1="8" y1="26" x2="158" y2="26" stroke="#475569" stroke-width="1.2"/>
-    <line x1="8" y1="52" x2="158" y2="52" stroke="#1E293B" stroke-width="1"/>
+    <line x1="8" y1="58" x2="158" y2="58" stroke="#1E293B" stroke-width="1"/>
+    <line x1="8" y1="90" x2="158" y2="90" stroke="#1E293B" stroke-width="1"/>
 
-    <!-- 5 Waterfall Bars plunging downward from baseline y=26 -->
+    <!-- 5 Proportional 1-Day Waterfall Bars from baseline y=26 -->
     <g font-family="Avenir Next Condensed, sans-serif" font-weight="800" font-size="9.8" text-anchor="middle">
       <!-- TAIEX -6.2% -->
-      <rect x="10" y="26" width="22" height="66" rx="2" fill="#EF4444"/>
+      <rect x="10" y="26" width="22" height="64" rx="2" fill="#EF4444"/>
       <text x="21" y="105" fill="#FCA5A5">-6.2%</text>
       <text x="21" y="119" fill="#E2E8F0">TAIEX</text>
 
       <!-- NASDAQ -5.3% -->
-      <rect x="40" y="26" width="22" height="58" rx="2" fill="#DC2626"/>
+      <rect x="40" y="26" width="22" height="55" rx="2" fill="#DC2626"/>
       <text x="51" y="105" fill="#FCA5A5">-5.3%</text>
       <text x="51" y="119" fill="#E2E8F0">NASD</text>
 
       <!-- KOSPI -5.2% -->
-      <rect x="71" y="26" width="22" height="56" rx="2" fill="#DC2626"/>
+      <rect x="71" y="26" width="22" height="54" rx="2" fill="#DC2626"/>
       <text x="82" y="105" fill="#FCA5A5">-5.2%</text>
       <text x="82" y="119" fill="#E2E8F0">KOSPI</text>
 
       <!-- NIKKEI -5.1% -->
-      <rect x="102" y="26" width="22" height="55" rx="2" fill="#B91C1C"/>
+      <rect x="102" y="26" width="22" height="53" rx="2" fill="#B91C1C"/>
       <text x="113" y="105" fill="#FCA5A5">-5.1%</text>
       <text x="113" y="119" fill="#E2E8F0">NIKK</text>
 
       <!-- S&P -3.7% -->
-      <rect x="133" y="26" width="23" height="60" rx="2" fill="#F97316"/>
+      <rect x="133" y="26" width="23" height="38" rx="2" fill="#F97316"/>
       <text x="144.5" y="105" fill="#FDBA74">-3.7%</text>
       <text x="144.5" y="119" fill="#FFFBEB">S&amp;P</text>
     </g>
 
-    <!-- Foreground -10% Correction Threshold Line & Badge (drawn ON TOP of bars) -->
-    <line x1="8" y1="80" x2="158" y2="80" stroke="#FDE047" stroke-width="1.8" stroke-dasharray="4,3"/>
-    <rect x="34" y="63" width="98" height="14" rx="2.5" fill="#0F172A" stroke="#FBBF24" stroke-width="1"/>
-    <text x="83" y="73" text-anchor="middle" fill="#FEF08A" font-family="Avenir Next Condensed, sans-serif" font-size="9.5" font-weight="800">-10% CORRECTION</text>
+    <!-- Callout pill pointing to S&P entering >-10% peak correction -->
+    <line x1="144.5" y1="64" x2="144.5" y2="73" stroke="#FDE047" stroke-width="1.5"/>
+    <rect x="64" y="73" width="94" height="15" rx="2.5" fill="#0F172A" stroke="#FBBF24" stroke-width="1.1"/>
+    <text x="111" y="83.5" text-anchor="middle" fill="#FEF08A" font-family="Avenir Next Condensed, sans-serif" font-size="9.2" font-weight="800">S&amp;P &gt;10% OFF PEAK</text>
 
     <!-- AI Chip Badge at top -->
     <rect x="8" y="5" width="150" height="17" rx="3" fill="#7F1D1D"/>
@@ -366,28 +359,28 @@ export function svgWhoDrcEbola() {
   return `<svg viewBox="0 0 116 142" width="116" height="142" xmlns="http://www.w3.org/2000/svg">
     <rect x="0" y="0" width="116" height="142" rx="5" fill="#182232"/>
     <!-- Central & East Africa Landmass (DRC + Sudan + Great Lakes) -->
-    <path d="M 16 10 L 88 10 L 104 36 L 96 76 L 86 114 L 22 114 L 18 76 L 10 48 Z" fill="#DDD4BE" stroke="#64748B" stroke-width="1.2"/>
+    <path d="M 16 24 L 88 24 L 104 42 L 96 80 L 86 115 L 22 115 L 18 78 L 10 52 Z" fill="#DDD4BE" stroke="#64748B" stroke-width="1.2"/>
     <!-- DRC / Sudan Regional Divider -->
-    <path d="M 18 50 L 66 50 L 78 64 L 74 112" fill="none" stroke="#64748B" stroke-width="1.2" stroke-dasharray="3,2"/>
-    <text x="20" y="108" fill="#1E293B" font-family="Avenir Next Condensed, sans-serif" font-size="10.5" font-weight="800">DR CONGO</text>
-    <text x="34" y="38" fill="#334155" font-family="Avenir Next Condensed, sans-serif" font-size="10.5" font-weight="800">SUDAN</text>
+    <path d="M 16 56 L 66 56 L 78 68 L 74 113" fill="none" stroke="#64748B" stroke-width="1.2" stroke-dasharray="3,2"/>
+    <text x="20" y="109" fill="#1E293B" font-family="Avenir Next Condensed, sans-serif" font-size="10.2" font-weight="800">DR CONGO</text>
+    <text x="28" y="44" fill="#334155" font-family="Avenir Next Condensed, sans-serif" font-size="10.5" font-weight="800">SUDAN</text>
 
     <!-- UNSC Sudan Alert Pin -->
-    <polygon points="82,20 91,29 82,38 73,29" fill="#D97706" stroke="#FFFFFF" stroke-width="1.3"/>
-    <text x="82" y="32.5" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="8.5" font-weight="800">UN</text>
+    <polygon points="83,28 92,37 83,46 74,37" fill="#D97706" stroke="#FFFFFF" stroke-width="1.3"/>
+    <text x="83" y="40.5" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="8.5" font-weight="800">UN</text>
 
-    <!-- Eastern DRC PHEIC Containment Ring & WHO Medical Cross -->
-    <circle cx="72" cy="74" r="19" fill="#EF4444" opacity="0.24"/>
-    <circle cx="72" cy="74" r="19" fill="none" stroke="#DC2626" stroke-width="2" stroke-dasharray="4,3"/>
-    <circle cx="72" cy="74" r="11.5" fill="#0284C7" stroke="#FFFFFF" stroke-width="1.6"/>
-    <rect x="69.5" y="67.5" width="5" height="13" fill="#FFFFFF"/>
-    <rect x="65.5" y="71.5" width="13" height="5" fill="#FFFFFF"/>
+    <!-- Eastern DRC Outbreak Containment Ring & WHO Medical Cross -->
+    <circle cx="72" cy="79" r="18" fill="#EF4444" opacity="0.24"/>
+    <circle cx="72" cy="79" r="18" fill="none" stroke="#DC2626" stroke-width="2" stroke-dasharray="4,3"/>
+    <circle cx="72" cy="79" r="11" fill="#0284C7" stroke="#FFFFFF" stroke-width="1.6"/>
+    <rect x="69.5" y="72.5" width="5" height="13" fill="#FFFFFF"/>
+    <rect x="65.5" y="76.5" width="13" height="5" fill="#FFFFFF"/>
 
-    <rect x="6" y="6" width="52" height="15" rx="2.5" fill="#0284C7"/>
-    <text x="32" y="16.5" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="9.5" font-weight="800">WHO PHEIC</text>
+    <rect x="6" y="5" width="66" height="15" rx="2.5" fill="#0284C7"/>
+    <text x="39" y="15.8" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="9.5" font-weight="800">WHO 20 NOV</text>
 
-    <rect x="5" y="121" width="106" height="17" rx="3" fill="#DC2626"/>
-    <text x="58" y="133" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="10.8" font-weight="800">11,600+ CASES</text>
+    <rect x="4" y="121" width="108" height="17" rx="3" fill="#DC2626"/>
+    <text x="58" y="133" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="9.2" font-weight="800">11,613 CASES · 5,678 DEAD</text>
   </svg>`;
 }
 
@@ -429,27 +422,26 @@ export function svgMiddleEastUnReport() {
 export function svgLatAmCaribbean() {
   return `<svg viewBox="0 0 116 142" width="116" height="142" xmlns="http://www.w3.org/2000/svg">
     <rect x="0" y="0" width="116" height="142" rx="5" fill="#0E3047"/>
-    <!-- Central America + NW South America + Caribbean Arc -->
-    <path d="M 0 24 L 22 38 L 36 52 L 58 56 L 74 78 L 62 118 L 24 118 L 20 82 L 28 60 L 8 44 L 0 36 Z" fill="#D8D1BD" stroke="#64748B" stroke-width="1.2"/>
-    <!-- Lesser Antilles / Barbados Island Chain -->
-    <circle cx="84" cy="30" r="2.2" fill="#E2E8F0"/>
-    <circle cx="90" cy="36" r="2.2" fill="#E2E8F0"/>
-    <circle cx="95" cy="44" r="4" fill="#FBBF24" stroke="#FFFFFF" stroke-width="1.3"/>
+    <!-- Mexico (NW Sinaloa down to Yucatan) & Central America Isthmus (Honduras) -->
+    <path d="M 6 24 L 44 24 L 54 44 L 68 62 L 82 58 L 86 70 L 98 84 L 90 104 L 70 96 L 52 78 L 32 66 L 16 48 Z" fill="#D8D1BD" stroke="#64748B" stroke-width="1.2"/>
+    <!-- Baja Peninsula -->
+    <path d="M 8 28 L 16 54 L 11 56 L 4 30 Z" fill="#D8D1BD" stroke="#64748B" stroke-width="1"/>
 
-    <!-- Connecting Diplomatic Arc: Quito <-> Barbados -->
-    <path d="M 34 88 Q 56 38 95 44" fill="none" stroke="#38BDF8" stroke-width="2.4" stroke-dasharray="4,3"/>
+    <!-- Security & Cyber Cooperation Arc -->
+    <path d="M 32 46 Q 68 42 84 86" fill="none" stroke="#38BDF8" stroke-width="2.2" stroke-dasharray="4,3"/>
 
-    <!-- Quito Security Shield Emblem -->
-    <path d="M 22 76 L 46 76 L 46 90 Q 34 102 22 90 Z" fill="#1D4ED8" stroke="#FDE047" stroke-width="1.8"/>
-    <text x="34" y="88" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="9.5" font-weight="800">QUITO</text>
+    <!-- Sinaloa Federal Raid Shield (NW Mexico) -->
+    <path d="M 18 34 L 46 34 L 46 49 Q 32 60 18 49 Z" fill="#B91C1C" stroke="#FDE047" stroke-width="1.7"/>
+    <text x="32" y="45.5" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="9" font-weight="800">SINALOA</text>
+    <text x="64" y="20" text-anchor="middle" fill="#FDE68A" font-family="Avenir Next Condensed, sans-serif" font-size="9.5" font-weight="800">TOP-10 BOSS HELD</text>
 
-    <!-- Barbados UN AI Node -->
-    <circle cx="88" cy="22" r="12.5" fill="#0284C7" stroke="#BAE6FD" stroke-width="1.6"/>
-    <text x="88" y="25.5" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="9.2" font-weight="800">UN AI</text>
-    <text x="88" y="62" text-anchor="middle" fill="#BAE6FD" font-family="Avenir Next Condensed, sans-serif" font-size="9.5" font-weight="800">BARBADOS</text>
+    <!-- Honduras US Cyber Pact Node -->
+    <circle cx="84" cy="88" r="12.5" fill="#0284C7" stroke="#BAE6FD" stroke-width="1.6"/>
+    <text x="84" y="91.5" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="9" font-weight="800">CYBER</text>
+    <text x="44" y="108" text-anchor="middle" fill="#BAE6FD" font-family="Avenir Next Condensed, sans-serif" font-size="9.5" font-weight="800">HONDURAS PACT</text>
 
     <rect x="5" y="121" width="106" height="17" rx="3" fill="#0369A1"/>
-    <text x="58" y="133" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="10.5" font-weight="800">QUITO &amp; BARBADOS</text>
+    <text x="58" y="133" text-anchor="middle" fill="#FFFFFF" font-family="Avenir Next Condensed, sans-serif" font-size="10.2" font-weight="800">SINALOA &amp; HONDURAS</text>
   </svg>`;
 }
 
@@ -476,7 +468,7 @@ export function svgBepiColomboSpace() {
     <!-- Sunlit Mercury Crescent (Bottom Left) -->
     <circle cx="22" cy="99" r="17" fill="#475569"/>
     <path d="M 22 82 A 17 17 0 0 1 22 116 A 11 17 0 0 0 22 82 Z" fill="#FDBA74"/>
-    <text x="24" y="62" text-anchor="middle" fill="#FED7AA" font-family="Avenir Next Condensed, sans-serif" font-size="9.5" font-weight="800">MERCURY</text>
+    <text x="23" y="77" text-anchor="middle" fill="#FED7AA" font-family="Avenir Next Condensed, sans-serif" font-size="9.5" font-weight="800">MERCURY</text>
 
     <!-- ESA/JAXA BepiColombo Probe -->
     <g transform="translate(56,76) rotate(-24)">
